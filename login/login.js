@@ -5,7 +5,7 @@ const form=document.querySelector("#form");
 
 
 form.addEventListener("submit",function(e){
-    const username=document.querySelector(".username").value;
+    const username=document.querySelector("#username").value;
     const password=document.querySelector("#password").value;
     console.log(username);
     const pUsername="abcd";

@@ -5,15 +5,17 @@ body{
     background: #dfe9f5;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    
 }
 img{
     z-index: -1;
     opacity: 0.4;
-    width: 170vh;
-    background-size: cover;
+    
+    background-size: 100%;
+    background-position: cover;
+    background-attachment: fixed;
     margin-top: -10%;
     margin-left: 10%;
+    
 }
 .login{
     position: absolute;
