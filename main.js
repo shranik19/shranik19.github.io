@@ -6,7 +6,7 @@
     
 // })
 
-
+window.addEventListener('load',()=>{
     const form=document.querySelector("#new-notice");
     const input=document.querySelector("#notice-input");
     const file=document.querySelector("#notice-file");
@@ -77,3 +77,4 @@
             
         });
     });
+});
