@@ -83,8 +83,138 @@ section{
     background: #fff;
     border-radius: 3px;
 }
-nav:hover~.sec1{
+nav:hover~.notice-content{
+    /* display: none; */
     margin: 5px 3px 0 290px;
+    transition: all 0.5s ease;
 }
+
+/* ===============styling the admin page================ */
+.dash{
+    text-align: center;
+}
+.dash h1{
+    /* display: inline-block; */
+    margin: 30px;
+}
+
+.notice-content{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(83, 83, 145);
+}
+#head{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+#head h1{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#new-notice{
+    display: flex;
+    flex-wrap: wrap;
+}
+button,input,p{
+    background-color: lightblue;
+    margin: 3px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(83, 83, 145);
+}
+#notice-input{
+    width: 300px;
+}
+input::placeholder{
+    color: rgb(83, 83, 145);
+}
+/* #notice-file{
+    
+} */
+
+#notice-add{
+    background: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#notice-add:hover{
+    opacity: 0.8;
+}
+#notice-add:active{
+    opacity: 0.6;
+}
+
+#main-section{
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+#notice-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.notices, .actions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.notices{
+    justify-content: center;
+    background: lightblue;
+    border-radius: 1rem;
+    padding: 5px;
+    margin: 5px;
+}
+.content input, .actions button{
+    background: rgba(83, 83, 145,0.2);
+    padding: 0.7rem;
+}
+.text{
+    width: 400px;
+    word-wrap: break-word;
+}
+.delete:hover{
+    background-color: red;
+    color: #dfe9f5;
+    transition: all 0.4s;
+}
+.download:hover{
+    background-color: GREEN;
+    color: #dfe9f5;
+    transition: all 0.4s;
+}
+
+.display-none{
+    display: none;
+}
+
+
+
+
+/* .notice-content{
+    background-color: tomato;
+} */
+
+
+
+
+
+
+
+
+/* nav:hover~.sec2{
+    background: tomato;
+    margin: 5px 3px 0 290px;
+} */
+
 
 /* ==========media query========== */

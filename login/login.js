@@ -18,7 +18,7 @@ form.addEventListener("submit",function(e){
         e.preventDefault();
     }
     else if(username==pUsername && password==pPassword){
-        alert("Successfull login");
+        window.open("../admin.html","_blank");
     }
     else{
         alert("Invalid password.");
