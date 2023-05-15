@@ -120,7 +120,7 @@ nav:hover~.notice-content{
     display: flex;
     flex-wrap: wrap;
 }
-button,input,p{
+button,input{
     background-color: lightblue;
     margin: 3px;
     border-radius: 1rem;
@@ -134,9 +134,9 @@ button,input,p{
 input::placeholder{
     color: rgb(83, 83, 145);
 }
-/* #notice-file{
-    
-} */
+#notice-file{
+    background: none;
+}
 
 #notice-add{
     background: none;

@@ -1,16 +1,18 @@
-// const notice=document.querySelector(".notice");
+const notice=document.querySelector(".notice");
+const dash=document.querySelector(".dash");
+const noticeContent=document.querySelector(".notice-content");
 
-
-
-// notice.addEventListener("click",function{
-    
-// })
+notice.addEventListener("click",function(){
+    dash.style.display="none";
+    noticeContent.style.display="";
+})
 
 window.addEventListener('load',()=>{
+    noticeContent.style.display='none';
     const form=document.querySelector("#new-notice");
     const input=document.querySelector("#notice-input");
     const file=document.querySelector("#notice-file");
-    const noticeList=document.querySelector("#notice-list");
+    const noticeList=document.querySelector(".notice-list");
 
     form.addEventListener('submit',(e)=>{
         e.preventDefault();
@@ -62,11 +64,11 @@ window.addEventListener('load',()=>{
         });
         
         notice_download_El.addEventListener("click",()=>{
+            const filedata=notice_download_El.value;
             if(!filedata){
                 alert("no detail notice");
                 return;
             }
-            const filedata=notice_download_El.value;
 
             var blob = new Blob([filedata],{type:'text/plain'});
 
