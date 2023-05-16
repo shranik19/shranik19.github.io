@@ -22,6 +22,7 @@ header{
     font-weight: 600;
     border: 1px solid lightblue;
 }
+/* ======================NAV STYLING======================= */
 nav{
     position: absolute;
     top: 54px;
@@ -83,7 +84,10 @@ section{
     background: #fff;
     border-radius: 3px;
 }
-nav:hover~.notice-content{
+/* ================TRANSITION ON NAV=============== */
+
+
+nav:hover~.notice-content,nav:hover~.dash,nav:hover~.event-content{
     /* display: none; */
     margin: 5px 3px 0 290px;
     transition: all 0.5s ease;
@@ -92,31 +96,32 @@ nav:hover~.notice-content{
 /* ===============styling the admin page================ */
 .dash{
     text-align: center;
+    color: rgb(83, 83, 145);
 }
 .dash h1{
     /* display: inline-block; */
     margin: 30px;
 }
-
-.notice-content{
+/* =========STYLING NOTICE AND EVENT HEAD=========== */
+.notice-content,.event-content{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     color: rgb(83, 83, 145);
 }
-#head{
+.head{
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
-#head h1{
+.head h1{
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
-#new-notice{
+#new-notice,#new-event{
     display: flex;
     flex-wrap: wrap;
 }
@@ -128,31 +133,31 @@ button,input{
     font-size: 0.8rem;
     color: rgb(83, 83, 145);
 }
-#notice-input{
+#notice-input,#event-input{
     width: 300px;
 }
 input::placeholder{
     color: rgb(83, 83, 145);
 }
-#notice-file{
+#notice-file,#event-file{
     background: none;
 }
 
-#notice-add{
+#notice-add,#event-add{
     background: none;
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
     transition: 0.4s;
 }
-#notice-add:hover{
+#notice-add:hover,#event-add:hover{
     opacity: 0.8;
 }
-#notice-add:active{
+#notice-add:active,#event-add:active{
     opacity: 0.6;
 }
-
-#main-section{
+/* ====================ENF OF THE HEAD============ */
+.main-section{
     padding: 2rem 1rem;
     margin: 0 auto;
 }

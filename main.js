@@ -1,14 +1,30 @@
 const notice=document.querySelector(".notice");
+const events=document.querySelector(".events");
+const home=document.querySelector(".home");
 const dash=document.querySelector(".dash");
 const noticeContent=document.querySelector(".notice-content");
+const eventContent=document.querySelector(".event-content");
 
 notice.addEventListener("click",function(){
     dash.style.display="none";
+    eventContent.style.display="none";
     noticeContent.style.display="";
 })
+home.addEventListener("click",function(){
+    noticeContent.style.display="none";
+    eventContent.style.display="none";
+    dash.style.display="";
+})
+events.addEventListener("click",function(){
+    noticeContent.style.display="none";
+    eventContent.style.display="";
+    dash.style.display="none";
+})
+
 
 window.addEventListener('load',()=>{
     noticeContent.style.display='none';
+    eventContent.style.display="none";
     const form=document.querySelector("#new-notice");
     const input=document.querySelector("#notice-input");
     const file=document.querySelector("#notice-file");
