@@ -13,7 +13,7 @@ body{
     background: #dfe9f5;
 }
 header{
-    width: 100%;
+    width: 100vw;
     background: #fff;
     color: rgba(85,83,83);
     height: 50px;
@@ -27,7 +27,7 @@ nav{
     position: absolute;
     top: 54px;
     bottom: 0;
-    height: 100%;
+    min-height: 100vh;
     left: 0;
     background: #fff;
     width: 90px;
@@ -70,7 +70,7 @@ a:hover{
     background: #eee;
 }
 .navi:hover{
-    width: 280px;
+    width: 250px;
     transition: all 0.5s ease;
 }
 main{
@@ -89,7 +89,7 @@ section{
 
 nav:hover~.notice-content,nav:hover~.dash,nav:hover~.event-content,nav:hover~.contact-content{
     /* display: none; */
-    margin: 5px 3px 0 290px;
+    margin: 5px 3px 0 260px;
     transition: all 0.5s ease;
 }
 
@@ -203,9 +203,13 @@ input::placeholder{
 }
 
 /* ============contact us=============== */
+.contact-content{
+    height: auto;
+}
 .contact-sec{
     color: rgba(85,83,83);
 }
+
 .developer,.ward{
     background: #ccddf1;
     color:rgba(85,83,83);
@@ -221,7 +225,7 @@ input::placeholder{
     margin: 1rem;
 }
 .developer h4,.ward h4{
-    margin: 1rem;
+    margin: 0.2rem;
 }
 /* .notice-content{
     background-color: tomato;
