@@ -1,23 +1,34 @@
 const notice=document.querySelector(".notice");
 const events=document.querySelector(".events");
+const contact=document.querySelector(".contact");
 const home=document.querySelector(".home");
 const dash=document.querySelector(".dash");
 const noticeContent=document.querySelector(".notice-content");
 const eventContent=document.querySelector(".event-content");
+const contactContent=document.querySelector(".contact-content");
 
 notice.addEventListener("click",function(){
     dash.style.display="none";
     eventContent.style.display="none";
     noticeContent.style.display="";
+    contactContent.style.display="none";
 })
 home.addEventListener("click",function(){
     noticeContent.style.display="none";
     eventContent.style.display="none";
+    contactContent.style.display="none";
     dash.style.display="";
 })
 events.addEventListener("click",function(){
     noticeContent.style.display="none";
+    contactContent.style.display="none";
     eventContent.style.display="";
+    dash.style.display="none";
+})
+contact.addEventListener("click",function(){
+    noticeContent.style.display="none";
+    contactContent.style.display="";
+    eventContent.style.display="none";
     dash.style.display="none";
 })
 
@@ -25,6 +36,7 @@ events.addEventListener("click",function(){
 window.addEventListener('load',()=>{
     noticeContent.style.display='none';
     eventContent.style.display="none";
+    contactContent.style.display="none";
     const form=document.querySelector("#new-notice");
     const input=document.querySelector("#notice-input");
     const file=document.querySelector("#notice-file");
